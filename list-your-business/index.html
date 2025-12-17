@@ -6,15 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <meta name="description" content="List your local business on ServeKerala.in and receive direct customer calls from your service area. Simple, trusted, Kerala-focused platform." />
+  <meta name="description" content="List your local business on ServeKerala.in and receive direct customer calls from your service area. A simple, Kerala-focused local business platform." />
   <meta name="keywords" content="list business kerala, local business listing kerala, service providers kerala" />
   <meta name="author" content="ServeKerala.in" />
 
-  <!-- Common CSS -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- ================= GOOGLE TAG MANAGER ================= -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5Q3X8BNF');
+  </script>
+  <!-- =============== END GOOGLE TAG MANAGER =============== -->
 </head>
 
 <body>
+
+<!-- ================= GOOGLE TAG MANAGER (NOSCRIPT) ================= -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Q3X8BNF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- =============== END GOOGLE TAG MANAGER (NOSCRIPT) =============== -->
 
 <!-- ================= HEADER ================= -->
 <header class="site-header">
@@ -110,10 +127,23 @@
       Contact us now and get your business listed on ServeKerala.in.
     </p>
 
-    <a href="mailto:bestservicenearme@gmail.com" class="btn-outline">
+    <!-- EMAIL CTA (TRACKED) -->
+    <a href="mailto:bestservicenearme@gmail.com"
+       class="btn-outline"
+       onclick="dataLayer.push({
+         event: 'list_business_click',
+         action_type: 'email'
+       })">
       Email Us
     </a>
-    <a href="https://wa.me/91XXXXXXXXXX" class="btn-primary">
+
+    <!-- WHATSAPP CTA (TRACKED) -->
+    <a href="https://wa.me/918281770660"
+       class="btn-primary"
+       onclick="dataLayer.push({
+         event: 'list_business_click',
+         action_type: 'whatsapp'
+       })">
       WhatsApp Us
     </a>
   </div>
