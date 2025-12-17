@@ -226,3 +226,14 @@ a {
     display: none; /* simple mobile menu later */
   }
 }
+/* Business card action buttons */
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.action-buttons a {
+  text-align: center;
+}
