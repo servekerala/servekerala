@@ -11,7 +11,8 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Arial, sans-serif;
   line-height: 1.6;
   color: #1f2933;
   background-color: #f7faf9;
@@ -95,41 +96,55 @@ a {
 
 .hero-actions {
   margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
-/* ---------- BUTTONS ---------- */
+/* ---------- BUTTONS (GLOBAL) ---------- */
+.btn-primary,
 .btn-outline {
-  display: inline-block;
-  padding: 10px 18px;
-  margin-right: 10px;
-  border: 2px solid #1f7a53;   /* Kerala green */
-  color: #1f7a53;
-  text-decoration: none;
-  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 999px;
   font-weight: 600;
-  background: transparent;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
-.btn-outline:hover {
-  background: #1f7a53;
-  color: #ffffff;
-}
-
+/* Primary button */
 .btn-primary {
   background: #1b7f5a;
   color: #ffffff;
+  border: 2px solid #1b7f5a;
 }
 
 .btn-primary:hover {
   background: #166947;
 }
 
+/* Outline button (default green) */
 .btn-outline {
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  background: transparent;
+  color: #1b7f5a;
+  border: 2px solid #1b7f5a;
 }
 
 .btn-outline:hover {
+  background: #1b7f5a;
+  color: #ffffff;
+}
+
+/* ---------- HERO BUTTON OVERRIDES ---------- */
+.hero .btn-outline {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.hero .btn-outline:hover {
   background: #ffffff;
   color: #1b7f5a;
 }
@@ -161,7 +176,7 @@ a {
   color: #1b7f5a;
 }
 
-/* ---------- INFO BOX ---------- */
+/* ---------- INFO BOX (BUSINESS CARD) ---------- */
 .info-box {
   background: #ffffff;
   padding: 24px;
@@ -173,6 +188,39 @@ a {
   margin-bottom: 10px;
   color: #1b7f5a;
   font-size: 18px;
+}
+
+/* Business card buttons */
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.action-buttons a {
+  min-width: 150px;
+}
+
+/* ---------- BUSINESS LINKS (GMB / FB) ---------- */
+.business-links {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.business-links span {
+  margin-right: 6px;
+}
+
+.business-links a {
+  color: #1b7f5a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.business-links a:hover {
+  text-decoration: underline;
 }
 
 /* ---------- BUSINESS CTA ---------- */
@@ -225,77 +273,4 @@ a {
   .main-nav {
     display: none; /* simple mobile menu later */
   }
-}
-/* Business card action buttons */
-.action-buttons {
-  display: flex;
-  gap: 12px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
-
-.action-buttons a {
-  text-align: center;
-}
-/* ===== FORCE BUSINESS ACTION BUTTON STYLES ===== */
-
-.info-box .action-buttons {
-  display: flex;
-  gap: 12px;
-  margin-top: 16px;
-  flex-wrap: wrap;
-}
-
-.info-box .action-buttons a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  min-width: 150px;
-}
-
-/* Primary button */
-.info-box .btn-primary {
-  background-color: #1f7a53;
-  color: #ffffff !important;
-  border: 2px solid #1f7a53;
-}
-
-/* Outline button */
-.info-box .btn-outline {
-  background-color: transparent;
-  color: #1f7a53 !important;
-  border: 2px solid #1f7a53;
-}
-
-/* Hover states */
-.info-box .btn-primary:hover {
-  background-color: #145c3f;
-}
-
-.info-box .btn-outline:hover {
-  background-color: #1f7a53;
-  color: #ffffff !important;
-}
-.business-links {
-  margin-top: 12px;
-  font-size: 14px;
-  color: #555;
-}
-
-.business-links span {
-  margin-right: 6px;
-}
-
-.business-links a {
-  color: #1f7a53;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.business-links a:hover {
-  text-decoration: underline;
 }
