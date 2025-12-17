@@ -98,14 +98,21 @@ a {
 }
 
 /* ---------- BUTTONS ---------- */
-.btn-primary,
 .btn-outline {
   display: inline-block;
-  padding: 12px 26px;
+  padding: 10px 18px;
+  margin-right: 10px;
+  border: 2px solid #1f7a53;   /* Kerala green */
+  color: #1f7a53;
+  text-decoration: none;
   border-radius: 30px;
-  font-size: 15px;
   font-weight: 600;
-  margin: 6px;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #1f7a53;
+  color: #ffffff;
 }
 
 .btn-primary {
