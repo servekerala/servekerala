@@ -6,15 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <meta name="description" content="Browse local service categories in Kerala. Find solar installation, plumbing, electrical, AC service and more across Kerala towns." />
+  <meta name="description" content="Browse local service categories in Kerala. Find solar installation, plumbing, electrical, AC service, CCTV, pest control and more across Kerala towns." />
   <meta name="keywords" content="services in kerala, local services kerala, solar installation kerala, plumber kerala, electrician kerala" />
   <meta name="author" content="ServeKerala.in" />
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- ================= GOOGLE TAG MANAGER ================= -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5Q3X8BNF');
+  </script>
+  <!-- =============== END GOOGLE TAG MANAGER =============== -->
 </head>
 
 <body>
+
+<!-- ================= GOOGLE TAG MANAGER (NOSCRIPT) ================= -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Q3X8BNF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- =============== END GOOGLE TAG MANAGER (NOSCRIPT) ================= -->
 
 <!-- ================= HEADER ================= -->
 <header class="site-header">
@@ -32,10 +49,11 @@
 <!-- ================= PAGE INTRO ================= -->
 <section class="section">
   <div class="container">
-    <h1>Browse Services in Kerala</h1>
+    <h1>Browse Local Services in Kerala</h1>
     <p>
       Select a service category to find trusted local service providers
-      across Kerala districts and towns.
+      across Kerala districts and towns. Contact businesses directly
+      without intermediaries.
     </p>
   </div>
 </section>
@@ -44,41 +62,47 @@
 <section class="section light-bg">
   <div class="container">
     <h2>Service Categories</h2>
-    <p>
-      Choose the type of service you are looking for.
-    </p>
+    <p>Choose the type of service you are looking for.</p>
 
     <div class="grid grid-4">
 
-      <a href="/services/solar-installation/" class="card">
+      <a href="/services/solar-installation/" class="card"
+         onclick="dataLayer.push({event:'service_click',service:'solar-installation'})">
         Solar Installation
       </a>
 
-      <a href="/services/plumber/" class="card">
+      <a href="/services/plumber/" class="card"
+         onclick="dataLayer.push({event:'service_click',service:'plumber'})">
         Plumber
       </a>
 
-      <a href="/services/electrician/" class="card">
+      <a href="/services/electrician/" class="card"
+         onclick="dataLayer.push({event:'service_click',service:'electrician'})">
         Electrician
       </a>
 
-      <a href="/services/ac-service/" class="card">
+      <a href="/services/ac-service/" class="card"
+         onclick="dataLayer.push({event:'service_click',service:'ac-service'})">
         AC Service
       </a>
 
-      <a href="/services/cctv-installation/" class="card">
+      <a href="/services/cctv-installation/" class="card"
+         onclick="dataLayer.push({event:'service_click',service:'cctv-installation'})">
         CCTV Installation
       </a>
 
-      <a href="/services/pest-control/" class="card">
+      <a href="/services/pest-control/" class="card"
+         onclick="dataLayer.push({event:'service_click',service:'pest-control'})">
         Pest Control
       </a>
 
-      <a href="/services/water-purifier-service/" class="card">
+      <a href="/services/water-purifier-service/" class="card"
+         onclick="dataLayer.push({event:'service_click',service:'water-purifier-service'})">
         Water Purifier Service
       </a>
 
-      <a href="/services/home-cleaning/" class="card">
+      <a href="/services/home-cleaning/" class="card"
+         onclick="dataLayer.push({event:'service_click',service:'home-cleaning'})">
         Home Cleaning
       </a>
 
